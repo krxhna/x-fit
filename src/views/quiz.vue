@@ -88,12 +88,8 @@
       select your body type
       <div class="grid grid-cols-2 m-10 gap-5">
         
-        <img src="../assets/Frame.png">
-        <img src="../assets/Frame.png">
-        <img src="../assets/Frame.png">
-        <img src="../assets/Frame.png">
-        <img src="../assets/Frame.png">
-
+        <img src="./Frame.png">
+        
 
       </div>
       <button
