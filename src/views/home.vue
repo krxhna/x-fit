@@ -43,7 +43,7 @@ export default {
         handleclick(){
             this.$router.push(
                 {
-                    path: '/about/',
+                    path: '/quiz',
                     
                 }
                 
