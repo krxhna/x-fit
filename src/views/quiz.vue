@@ -86,11 +86,15 @@
     <!-- //bodytype -->
     <div class=" bg-white flex flex-col justify-center" v-if="pagenumber == 5">
       select your body type
-      <div class="grid grid-cols-3 m-10 gap-5">
+      <div class="grid grid-cols-2 m-10 gap-5">
         
-        <div class="h-12 w-12 bg-red-500"></div>
-        <div class="h-12 w-12 bg-red-500"></div>
-        <div class="h-12 w-12 bg-red-500"></div>
+        <img src="../assets/Frame 3.png">
+        <img src="../assets/Frame 3.png">
+        <img src="../assets/Frame 3.png">
+        <img src="../assets/Frame 3.png">
+        <img src="../assets/Frame 3.png">
+        
+
       </div>
       <button
         class="bg-purple-600 font-semibold text-xl text-white p-4 italic m-5"
