@@ -85,17 +85,24 @@
 
     <!-- //bodytype -->
     <div class=" bg-white flex flex-col justify-center" v-if="pagenumber == 5">
-      select your body type
-      <div class="grid grid-cols-2 m-10 gap-5">
+      <div class="font-sans font-bold text-3xl">Select your body type</div>
+      <div class="grid grid-cols-3 m-10 gap-5">
         
-        <img src="../assets/Frame.png">
-        
+        <img  @click="pagenumber = 6"  src="../assets/10.png">
+        <img @click="pagenumber = 6" src="../assets/15.png">
+        <img @click="pagenumber = 6" src="../assets/20.png">
+        <img @click="pagenumber = 6" src="../assets/25.png">
+        <img @click="pagenumber = 6" src="../assets/30.png">
+        <img @click="pagenumber = 6" src="../assets/35.png">
+        <img @click="pagenumber = 6" src="../assets/40.png">
+        <img @click="pagenumber = 6" src="../assets/45.png">
+        <img @click="pagenumber = 6" src="../assets/50.png">
 
       </div>
-      <button
+      <!-- <button
         class="bg-purple-600 font-semibold text-xl text-white p-4 italic m-5"
         @click="pagenumber = 6"
-      >Next</button>
+      >Next</button> -->
     </div>
 
     <!-- //program -->
