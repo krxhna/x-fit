@@ -30,7 +30,7 @@
       <div class="w-full bg-gray-200 h-5 mb-6">
         <div class="bg-purple-600 h-5" style="width: 33.33%"></div>
       </div>
-      <div class="text-3xl font-sans font-bold text-black">Whats our age</div>
+      <div class="text-3xl font-sans font-bold text-black">Whats your age</div>
       <div
         class="bg-purple-200 m-4 p-5 rounded-lg text-xl font-sans font-semibold text-black"
         @click="pagenumber = 4"
@@ -93,7 +93,7 @@
         <img src="../assets/Frame 3.png">
         <img src="../assets/Frame 3.png">
         <img src="../assets/Frame 3.png">
-        
+
 
       </div>
       <button
