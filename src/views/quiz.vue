@@ -129,22 +129,30 @@
       >Agreesive weight loss</div>
     </div>
 <!-- results -->
-    <div class=" bg-yellow-300" v-if="pagenumber == 7">
+    <div class=" bg-white-300" v-if="pagenumber == 7">
       results
       {{bf}}
 
-       <div class="flex flex-col-reverse justify-center">
+       <div class="flex flex-col justify-center">
         
-        <div class=" font-mono font-bold text-3xl m-2" v-if="to_10.length>0">10% BODY FAT IN {{to_10.length}} days @ {{the_weight[to_10.length]}}</div>
+        <!-- <div class=" font-mono font-bold text-3xl m-2" v-if="to_10.length>0">10% BODY FAT IN {{to_10.length}} days @  {{the_weight[to_10.length]}}</div>
         <div class=" font-mono font-bold text-3xl m-2"  v-if="to_15.length>0">15% BODY FAT IN {{to_15.length}} days @ {{the_weight[to_15.length]}}</div>
         <div class=" font-mono font-bold text-3xl m-2" v-if="to_20.length>0">20% BODY FAT IN {{to_20.length}} days @ {{the_weight[to_20.length]}}</div>
         <div class=" font-mono font-bold text-3xl m-2" v-if="to_25.length>0">25% BODY FAT IN {{to_25.length}} days @ {{the_weight[to_25.length]}}</div>
         <div class=" font-mono font-bold text-3xl m-2" v-if="to_30.length>0">30% BODY FAT IN {{to_30.length}} days @ {{the_weight[to_30.length]}}</div>
         <div class=" font-mono font-bold text-3xl m-2" v-if="to_35.length>0">35% BODY FAT IN {{to_30.length}} days @ {{the_weight[to_30.length]}}</div>
-        <div class=" font-mono font-bold text-3xl m-2" v-if="to_40.length>0">40% BODY FAT IN {{to_30.length}} days @ {{the_weight[to_30.length]}}</div>
-        <div class=" font-mono font-bold text-3xl m-2 flex  flex-col  justify-center" v-if="to_45.length>0">45% BODY FAT IN {{to_30.length}} days @ {{the_weight[to_30.length]}} <img src="../assets/50.png"></div>
+        <div class=" font-mono font-bold text-3xl m-2" v-if="to_40.length>0">40% BODY FAT IN {{to_30.length}} days @ {{the_weight[to_30.length]}}</div> -->
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_45.length>0"> In {{to_45.length}} days <div class="text-2xl m-1">{{the_weight[to_45.length]}} kg</div> <img class="" src="../assets/45.png"></div>
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_40.length>0"> In {{to_40.length}} days <div class="text-2xl m-1">{{the_weight[to_40.length]}} kg</div> <img class="" src="../assets/40.png"></div>
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_35.length>0"> In {{to_35.length}} days <div class="text-2xl m-1">{{the_weight[to_35.length]}} kg</div> <img class="" src="../assets/35.png"></div>
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_30.length>0"> In {{to_30.length}} days <div class="text-2xl m-1">{{the_weight[to_30.length]}} kg</div> <img class="" src="../assets/30.png"></div>
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_25.length>0"> In {{to_25.length}} days <div class="text-2xl m-1">{{the_weight[to_25.length]}} kg</div> <img class="" src="../assets/25.png"></div>
+        
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_20.length>0"> In {{to_20.length}} days <div class="text-2xl m-1">{{the_weight[to_20.length]}} kg</div> <img class="" src="../assets/20.png"></div>
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_15.length>0"> In {{to_15.length}} days <div class="text-2xl m-1">{{the_weight[to_15.length]}} kg</div> <img class="" src="../assets/15.png"></div>
+        <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_10.length>0"> In {{to_10.length}} days <div class="text-2xl m-1">{{the_weight[to_10.length]}} kg</div> <img class="" src="../assets/10.png"></div>
     </div>
-      <button class="bg-blue-400 m-6 p-10"  @click="weight(weight1,bf/100,700)">show results</button>
+      <!-- <button class="bg-blue-400 m-6 p-10"  @click="weight(weight1,bf/100,700)">show results</button> -->
       <button class="bg-green-400" @click="pagenumber = 1">next</button>
     </div>
   </div>
@@ -171,7 +179,7 @@ export default {
     //   input_bodyfat: 0.2,
     //   input_deficit: 1200,
       the_weight:[""],
-      pagenumber: 6,
+      pagenumber: 1,
     };
   },
 
