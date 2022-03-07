@@ -91,7 +91,7 @@
 
       <button
         class="bg-purple-600 font-semibold text-xl text-white p-4 italic m-5"
-        @click="pagenumber = 5"
+        @click="weight_inpput(weight1)"
       >Next</button>
     </div>
 
@@ -209,6 +209,18 @@ export default {
   },
 
   methods:{
+
+    weight_inpput(weight){
+      if(weight==null){
+        alert("weight can't be empty");
+
+
+      }else{
+        this.pagenumber=5;
+      }
+      
+
+    },
 
 
     loadingbefore(){
