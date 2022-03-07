@@ -86,6 +86,9 @@
 
     <!-- //bodytype -->
     <div class=" bg-white flex flex-col justify-center" v-if="pagenumber == 5">
+      <div class="w-full bg-gray-200 h-5 mb-6">
+        <div class="bg-purple-600 h-5" style="width: 66.6%"></div>
+      </div>
 
 
       <div class="font-sans font-bold text-3xl">Select your body type</div>
@@ -111,6 +114,9 @@
     <!-- //program -->
 
     <div class="fd"  v-if="pagenumber == 6">
+      <div class="w-full bg-gray-200 h-5 mb-6">
+        <div class="bg-purple-600 h-5" style="width: 86.6%"></div>
+      </div>
       <div class="text-3xl font-bold">
         How fast you wanna lose weight
 
