@@ -4,8 +4,10 @@
     <!-- landingpage -->
     <div class=" bg-white flex flex-col justify-center align-middle" v-if="pagenumber == 1">
       
-      <div class="bg-red-200 h-96" >image</div>
-      <div class="text-lg font-mono  italic">free quiz</div>
+      <div class="bg-red-200 h-96" ><img  class="opacity-90 object-cover h-96 w-auto" src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4"/></div>
+      
+      <div class="bg-slate-50 shadow-md fixed bottom-0 rounded p-9 rounded-t-xl">
+        <div class="text-lg font-mono  italic">free quiz</div>
       <div class="text-3xl font-sans mx-3 font-bold italic">whats your goal</div>
       
         <img class=" block mx-auto my-3 animate-bounce h-10 w-10" src="../assets/hamd.png" />
@@ -13,7 +15,10 @@
 
       <button class="bg-purple-600 rounded-lg font-sans italic text-white text-2xl font-bold mx-10 p-2" @click="pagenumber = 2">Lose Weight</button>
       <button class="bg-purple-600 rounded-lg font-sans italic text-white text-2xl font-bold mx-10 p-2 my-3" @click="pagenumber = 2">Become Healthy</button>
-    </div>
+    
+      </div>
+      
+      </div>
 
     <!-- //gender -->
     <div class="bg-white flex flex-col justify-center" v-if="pagenumber == 2">
@@ -100,7 +105,7 @@
       <div class="font-sans font-bold text-3xl">Select your body type</div>
       <div class="grid grid-cols-3 m-10 gap-5">
         
-        <img  @click="bodyfat(10,weight1)"  src="../assets/10.png">
+        <img @click="bodyfat(10,weight1)"  src="../assets/10.png">
         <img @click="bodyfat(15,weight1)" src="../assets/15.png">
         <img @click="bodyfat(20,weight1)" src="../assets/20.png">
         <img @click="bodyfat(25,weight1)" src="../assets/25.png">
@@ -129,20 +134,20 @@
       </div>
             <div
         class="bg-purple-200 m-4 p-5 rounded-lg text-xl font-sans font-semibold text-black"
-        @click="pagenumber = 7"
+        @click="generate_results(10,weight1,300)"
       >Slow and Steady</div>
             <div
         class="bg-purple-200 m-4 p-5 rounded-lg text-xl font-sans font-semibold text-black"
-        @click="loadingbefore()"
+        @click="generate_results(10,weight1,500)"
       >Medium pace</div>
             <div
         class="bg-purple-200 m-4 p-5 rounded-lg text-xl font-sans font-semibold text-black"
-        @click="loadingbefore()"
+        @click="generate_results(10,weight1,800)"
       >Agreesive weight loss</div>
     </div>
 <!-- results -->
     <div class=" bg-white-300" v-if="pagenumber == 7">
-      projected results
+      <div class="font-sans m-3  text-black italic font-bold text-xl">Projected Weightloss results 📉</div>
       <!-- results
       {{bf}} -->
 
@@ -169,7 +174,7 @@
       <button class="bg-green-400" @click="pagenumber = 1">next</button>
       <header class="bottom-0  bg-purple-100 h-20 w-screen z-50 fixed"> 
         <div class="flex justify-center align-middle animate-bounce bg-purple-600 shadow-lg mx-6 my-3 p-3">
-          <div class="font-bold italic text-white text-2xl ">
+          <div class="font-bold italic text-white text-2xl " @click="pagenumber=1">
           Enroll
         </div>
         </div>
@@ -216,11 +221,25 @@ export default {
 
       this.bf = bf;
       this.pagenumber = 6;
-      this.weight(weight1,bf/100,700);
+      console.log(bf);
+      console.log(weight1);
+      // this.weight(weight1,bf/100,deficit);
      
        
 
     },
+    generate_results(ss,weight1,deficit){
+      //ss is just dumb idek why i havve it to lazy to remove
+
+      console.log(ss);
+      this.pagenumber = 7;
+      this.weight(weight1,this.bf/100,deficit);
+     
+       
+
+    },
+
+  
           
     generate() {
       this.list.push("meow");
