@@ -130,8 +130,9 @@
     </div>
 <!-- results -->
     <div class=" bg-white-300" v-if="pagenumber == 7">
-      results
-      {{bf}}
+      projected results
+      <!-- results
+      {{bf}} -->
 
        <div class="flex flex-col justify-center">
         
@@ -154,8 +155,8 @@
     </div>
       <!-- <button class="bg-blue-400 m-6 p-10"  @click="weight(weight1,bf/100,700)">show results</button> -->
       <button class="bg-green-400" @click="pagenumber = 1">next</button>
-      <header class="bottom-0 bg-purple-100 h-20 w-screen z-50 fixed"> 
-        <div class="flex justify-center align-middle bg-purple-600 shadow-lg mx-6 my-3 p-3">
+      <header class="bottom-0  bg-purple-100 h-20 w-screen z-50 fixed"> 
+        <div class="flex justify-center align-middle animate-bounce bg-purple-600 shadow-lg mx-6 my-3 p-3">
           <div class="font-bold italic text-white text-2xl ">
           Enroll
         </div>
