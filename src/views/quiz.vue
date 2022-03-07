@@ -1,12 +1,18 @@
 <template>
   <div class="quiz">
-    quiz
+  
     <!-- landingpage -->
-    <div class="h-56 bg-white flex flex-col justify-center" v-if="pagenumber == 1">
-      landingpage
-      <div class="d">e</div>
+    <div class=" bg-white flex flex-col justify-center align-middle" v-if="pagenumber == 1">
+      
+      <div class="bg-red-200 h-96" >image</div>
+      <div class="text-lg font-mono  italic">free quiz</div>
+      <div class="text-3xl font-sans mx-3 font-bold italic">whats your goal</div>
+      
+        <img class=" block mx-auto my-3 animate-bounce h-10 w-10" src="../assets/hamd.png" />
+      
 
-      <button class="bg-green-400" @click="pagenumber = 2">next</button>
+      <button class="bg-purple-600 rounded-lg font-sans italic text-white text-2xl font-bold mx-10 p-2" @click="pagenumber = 2">Lose Weight</button>
+      <button class="bg-purple-600 rounded-lg font-sans italic text-white text-2xl font-bold mx-10 p-2 my-3" @click="pagenumber = 2">Become Healthy</button>
     </div>
 
     <!-- //gender -->
@@ -127,11 +133,11 @@
       >Slow and Steady</div>
             <div
         class="bg-purple-200 m-4 p-5 rounded-lg text-xl font-sans font-semibold text-black"
-        @click="pagenumber = 7"
+        @click="loadingbefore()"
       >Medium pace</div>
             <div
         class="bg-purple-200 m-4 p-5 rounded-lg text-xl font-sans font-semibold text-black"
-        @click="pagenumber = 7"
+        @click="loadingbefore()"
       >Agreesive weight loss</div>
     </div>
 <!-- results -->
@@ -198,6 +204,13 @@ export default {
   },
 
   methods:{
+
+
+    loadingbefore(){
+      this.pagenumber=7;
+      setTimeout(this.pagenumber=7, 3000);
+
+    },
 
     bodyfat(bf,weight1){
 
