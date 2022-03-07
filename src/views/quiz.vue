@@ -4,7 +4,7 @@
     <!-- landingpage -->
     <div class=" bg-white flex flex-col justify-center align-middle" v-if="pagenumber == 1">
       
-      <div class="bg-red-200 h-96" ><img  class="opacity-90 object-cover h-96 w-auto" src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4"/></div>
+      <div class="bg-white h-[65vh]" ><img  class="opacity-90 object-cover h-full w-auto" src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4"/></div>
       
       <div class="bg-slate-50 shadow-md fixed bottom-0 rounded p-9 rounded-t-xl">
         <div class="text-lg font-mono  italic">free quiz</div>
