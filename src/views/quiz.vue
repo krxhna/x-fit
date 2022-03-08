@@ -204,7 +204,7 @@ export default {
     //   input_bodyfat: 0.2,
     //   input_deficit: 1200,
       the_weight:[""],
-      pagenumber: 1,
+      pagenumber: 2,
     };
   },
 

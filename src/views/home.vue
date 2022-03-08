@@ -1,20 +1,24 @@
 <template>
 <div class="dfa">
-    home
-    <div class="text-3xl p-4">Height</div>
     
-    <Input class="bg-orange-400 w-4/5 h-12 rounded-md"> ds </Input>
-    <div class="text-3xl p-4">Weight</div>
-    <Input class="bg-orange-400 w-4/5 h-12"  v-model="weight"> ds </Input>
-    <div class="text-3xl p-4">Age</div>
-    <Input class="bg-orange-400 w-4/5 h-12"  v-model="height"> ds </Input>
-    <div class="text-3xl p-4">deficit</div>
-    <Input class="bg-orange-400 w-4/5 h-12 rounded-md"  v-model="deficit"> ds </Input>
+    <div class=" bg-white flex flex-col justify-center align-middle">
+      
+      <div class="bg-white h-[65vh]" ><img  class="opacity-90 object-cover h-full w-auto" src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4"/></div>
+      
+      <div class="bg-slate-50 shadow-md fixed bottom-0 rounded p-9 rounded-t-xl">
+        <div class="text-lg font-mono  italic">free quiz</div>
+      <div class="text-3xl font-sans mx-3 font-bold italic">whats your goal</div>
+      
+        <img class=" block mx-auto my-3 animate-bounce h-10 w-10" src="../assets/hamd.png" />
+      
+
+      <button class="bg-purple-600 rounded-lg font-sans italic text-white text-2xl font-bold mx-10 p-2" @click="handleclick()">Lose Weight</button>
+      <button class="bg-purple-600 rounded-lg font-sans italic text-white text-2xl font-bold mx-10 p-2 my-3" @click="handleclick()">Become Healthy</button>
     
-    <div class="s">
-        {{weight}}
-    </div>
-    <button class="bg-green-500 px-10" @click="handleclick()">go</button>
+      </div>
+      
+      </div>
+    
     </div>  
 
 </template>
