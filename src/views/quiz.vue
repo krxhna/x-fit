@@ -171,7 +171,7 @@
         <div class=" font-sans italic text-black font-bold text-3xl m-2 mx-16 flex bg-purple-400  flex-col  justify-center" v-if="to_10.length>0"> In {{to_10.length}} days <div class="text-2xl m-1">{{the_weight[to_10.length]}} kg</div> <img class="" src="../assets/10.png"></div>
     </div>
       <!-- <button class="bg-blue-400 m-6 p-10"  @click="weight(weight1,bf/100,700)">show results</button> -->
-      <button class="bg-green-400" @click="pagenumber = 1">next</button>
+     
       <header class="bottom-0  bg-purple-100 h-20 w-screen z-50 fixed"> 
         <div class="flex justify-center align-middle animate-bounce bg-purple-600 shadow-lg mx-6 my-3 p-3">
           <div class="font-bold italic text-white text-2xl " @click="pagenumber=1">
